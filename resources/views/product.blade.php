@@ -2,6 +2,9 @@
 @section('title', 'HDC Events')
 @section('content')
 
-<h1>CONTATOS</h1>
+@if ( $id != null)
+<p>Exibindo produto id: {{ $id }}</p>  
+@endif
+
 
 @endsection
