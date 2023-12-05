@@ -32,4 +32,5 @@ Route::get('/contact', function () {
 
 Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware('auth');
 Route::post('/events/join/{id}', [EventController::class, 'JoinEvent'])->middleware('auth');
+Route::delete('/events/leave/{id}', [EventController::class, 'LeaveEvent'])->middleware('auth');
 
